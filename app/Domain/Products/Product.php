@@ -12,7 +12,7 @@ class Product extends Model
     use Attachment;
 
     public const PRODUCT_IMAGE = 'product_image';
-    protected $fillable = ['name', 'description'];
+    protected $fillable = ['name', 'description', 'category_id'];
 
     public function category(): BelongsTo
     {

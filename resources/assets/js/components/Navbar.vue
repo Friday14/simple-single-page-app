@@ -5,9 +5,7 @@
     </a>
 
     <div class="navbar-start">
-      <a class="navbar-item" href="https://bulma.io/">
-        Home
-      </a>
+      <router-link class="navbar-item" :to="{ name: 'products.create' }">Create Product</router-link>
     </div>
   </nav>
 </template>

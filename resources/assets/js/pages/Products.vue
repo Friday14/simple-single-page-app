@@ -50,7 +50,7 @@
       },
       filterImage(product) {
         if (product.attachments[0]) {
-          return product.attachments[0].file_remote_url || 'https://bulma.io/images/placeholders/1280x960.png'
+          return product.attachments[0].file_remote_url || product.attachments[0].file_name
         }
       }
     }

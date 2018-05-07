@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {path: '/:categoryId', component: require('./pages/Products')},
+  {path: '/products/create', name: 'products.create', component: require('./pages/CreateProduct')},
 ];
 
 export const router = new VueRouter({

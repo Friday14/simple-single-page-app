@@ -16,7 +16,7 @@
 </template>
 
 <script>
-  import MenuItem from './MenuItem'
+  import MenuItem from './CategoryItem'
 
   export default {
     name: "category-menu",

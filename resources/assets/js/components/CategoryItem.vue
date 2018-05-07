@@ -1,10 +1,14 @@
 <template>
   <li>
-    <router-link :to="`/${item.id}`">{{ item.name }}</router-link>
+    <slot name="parent">
+      <router-link :to="`/${item.id}`">{{ item.name }}</router-link>
+    </slot>
 
     <ul v-if="item.children">
       <template v-for="child in item.children">
-        <menu-item :item="child"></menu-item>
+        <slot name="child">
+          <category-item :item="child"></category-item>
+        </slot>
       </template>
     </ul>
   </li>
@@ -13,7 +17,7 @@
 <script>
   export default {
     props: ['item'],
-    name: "MenuItem"
+    name: "CategoryItem"
   }
 </script>
 
