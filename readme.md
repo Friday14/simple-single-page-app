@@ -7,8 +7,8 @@
     git clone
     composer install
     php artisan key:generate
-    php migrate
-    php db:seed
+    php artisan migrate
+    php artisan db:seed
     
     npm i
     npm run build
